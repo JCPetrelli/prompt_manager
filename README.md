@@ -84,6 +84,23 @@ And this final version will be copied to your clipboard.
 Feel free to use the prompts already contained in `prompts.csv` as a starting point, but don't hesitate to add, edit, and customize them as you see fit. The provided prompts are just examples, and you can tailor them to your specific needs or create entirely new ones. 
 
 
-Remember, the power of this tool lies in its flexibility. Make it work for you by customizing the prompts to enhance your productivity and creativity.
+## Additional Prompts Storage
+
+The `additional_prompts.csv` file is not directly linked to the script. This file serves as a repository for prompts that you may not need at the moment but would like to store for future use. It's a great place to keep a collection of prompts that you find interesting or potentially useful, without cluttering the main `prompts.csv` file.
+
+Feel free to add new prompts to `additional_prompts.csv` as you come across them. This can include:
+
+- Prompts you've created but aren't ready to use yet
+- Prompts you've found from other sources
+- Variations of existing prompts
+- Specialized prompts for specific tasks or projects
+
+When you decide you want to use a prompt from `additional_prompts.csv`, you can simply copy it to the `prompts.csv` file, and it will become available in the prompt manager.
+
+## Contributing
+
+If you have any suggestions or improvements for this script, please feel free to contribute to the project. You can fork the repository, make your changes, and submit a pull request.
+
+Enjoy!
 
 

@@ -28,20 +28,21 @@ pip install pyperclip colorama
 
 The script expects a CSV file named `prompts.csv` with the following format:
 
-| Number | Title  | Text                        |
-|--------|--------|-----------------------------|
-| 1      | Title1 | This is a prompt with {var1} |
-| 2      | Title2 | Another prompt with {var2}   |
+| Title  | Text                        |
+|--------|-----------------------------|
+| Title1 | This is a prompt with {var1} |
+| Title2 | Another prompt with {var2}   |
 
-- **Number**: A unique identifier for each prompt.
 - **Title**: A brief description or title of the prompt.
 - **Text**: The actual prompt content, which can contain placeholders for variables, enclosed in curly braces (`{}`).
+
+Note: The 'Number' column is no longer required in the CSV file. The script will automatically assign numbers to the prompts when displaying the menu.
 
 ## Usage
 
 1. **Run the Script**:
    ```bash
-   python script.py
+   python start_prompt_manager.py
    ```
 
 2. **Select a Prompt**: The script will display a list of available prompts, and you can select one by entering its number.
@@ -55,22 +56,20 @@ The script expects a CSV file named `prompts.csv` with the following format:
 If your `prompts.csv` file contains:
 
 ```csv
-Number,Title,Text
-1, Greeting,Hello {name}, welcome to {place}!
-2, Reminder,Don't forget to {task} today.
+Title,Text
+Learn any new skill,"I want to learn {desired skill}. Create a 30-day learning plan to help a beginner like me learn and improve this skill."
 ```
 
-When you select "1", the script will ask:
+When you select this prompt, the script will ask:
 
 ```
-Enter content for 'name': John
-Enter content for 'place': the meeting
+Enter content for 'desired skill': How to work with LLMs
 ```
 
 The final prompt would look like:
 
 ```
-Hello John, welcome to the meeting!
+"I want to learn How to work with LLMs. Create a 30-day learning plan to help a beginner like me learn and improve this skill."
 ```
 
 And this final version will be copied to your clipboard.
@@ -80,4 +79,11 @@ And this final version will be copied to your clipboard.
 - The script provides user-friendly error handling, ensuring invalid inputs (such as non-numeric values when selecting a prompt) are managed gracefully.
 - The terminal output includes color-coding to enhance readability, but this is automatically removed from the version copied to the clipboard.
 
-Enjoy using this customizable prompt generator!
+## Customizing Prompts
+
+Feel free to use the prompts already contained in `prompts.csv` as a starting point, but don't hesitate to add, edit, and customize them as you see fit. The provided prompts are just examples, and you can tailor them to your specific needs or create entirely new ones. 
+
+
+Remember, the power of this tool lies in its flexibility. Make it work for you by customizing the prompts to enhance your productivity and creativity.
+
+

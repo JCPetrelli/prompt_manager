@@ -1,0 +1,13 @@
+Title,Text
+Use the 80/20 principle to learn faster,"I want to learn about {topic}. Identify and share the most important 20% of learnings from this topic to help me understand 80%."
+Improve your writing by getting feedback,"Writing: '{writing}'.Proofread my writing above. Fix grammar and spelling mistakes. And make suggestions that will improve the clarity of my writing"
+Turn ChatGPT into your intern,"I am creating a report about {topic}. Research and create an in-depth report with a step-by-step guide that will help readers understand how to {outcome}."
+Learn any new skill,"I want to learn {desired skill}. Create a 30-day learning plan to help a beginner like me learn and improve this skill."
+Strengthen your learning by testing yourself,"I am currently learning about {topic}. Ask me a series of questions that will test my knowledge. Identify knowledge gaps in my answers and give me better answers to fill those gaps."
+Train ChatGPT to generate prompts for you,"You are an AI designed to help {profession}. Generate a list of the 10 best prompts for yourself. The prompts should be about {topic}."
+Ask ChatGPT to help you become better at using ChatGPT,"Create a beginner's guide to using ChatGPT. Topics should include prompts, priming, and personas. Include examples. The guide should be no longer than 500 words."
+Learn any complex topic in only a few minutes,"Explain {topic} in simple and easy terms that any beginner can understand."
+Generate new ideas,"I want to {task or goal}. Generate {desired outcome} for {task or goal}."
+Summarize long documents and articles,"Summarize the text below and give me a list of bullet points with key insights and the most important facts."
+Write an Instagram Caption,"Act as a social media manager having an experience of 12 years in the industry. You need to write a caption for a post regarding {whatever_your_post_is_about}. Make sure to preserve the style and tone of the caption."
+Act as a Title Generator for written pieces,"I want you to act as a title generator for written pieces. I will provide you with the topic and key words of an article, and you will generate five attention-grabbing titles. Please keep the title concise and under 20 words, and ensure that the meaning is maintained. Replies will utilize the language type of the topic. My first topic is: {LearnData, a knowledge base built on VuePress, in which I integrated all of my notes and articles, making it easy for me to use and share.}"""

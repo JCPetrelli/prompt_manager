@@ -47,7 +47,7 @@ Note: The 'Number' column is no longer required in the CSV file. The script will
 
 2. **Select a Prompt**: The script will display a list of available prompts, and you can select one by entering its number.
 
-3. **Input Variables**: If the selected prompt contains placeholders, the script will ask for input values to replace them. After adding your text, which could also span multiple lines, press Control+C to finish.
+3. **Input Variables**: If the selected prompt contains placeholders, the script will ask for input values to replace them. After adding your text, which could also span multiple lines, press Enter and thenControl+C to finish.
 
 4. **View and Copy the Final Prompt**: The completed prompt will be displayed in the terminal, and a clean version (without terminal color codes) will be copied to your clipboard automatically.
 

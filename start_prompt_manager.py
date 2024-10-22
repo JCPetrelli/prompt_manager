@@ -31,28 +31,34 @@ def get_user_choice(prompts):
             print(Fore.MAGENTA + "Invalid input. Please enter a number.")
 
 def get_variable_input(prompt_text):
-    print(Fore.MAGENTA + "Enter values for variables (press Enter to use default, Ctrl+C to finish):")
+    print(Fore.MAGENTA + "Enter values for variables (Then press Enter and Ctrl+C to finish):")
     variables = {}
     while '{' in prompt_text and '}' in prompt_text:
         start = prompt_text.index('{')
         end = prompt_text.index('}')
         variable = prompt_text[start+1:end]
         default_value = variable  # Use the variable name as the default value
+        print(Fore.MAGENTA + f"Enter content for '{variable}': " + Fore.YELLOW)
+
         value = ""
-        print(Fore.MAGENTA + f"Enter content for '{variable}' (default: {default_value}): " + Fore.YELLOW)
         try:
+            # This loop will capture multiple lines until Ctrl+C is pressed
             while True:
                 line = input()
-                if not line:
-                    break
-                value += line + "\n"
-            value = value.strip()
+                if line:  # If there's input, add it to the value
+                    value += line + "\n"
         except KeyboardInterrupt:
-            print("\nInput finished.")
-        if not value:
-            value = default_value
+            # Strip any trailing newlines from the value
+            value = value.strip()
+            # Check if there's no input at all (meaning the user pressed Ctrl+C without input)
+            if not value:
+                value = default_value
+            print("\nInput finished. Moving on to the next variable.")
+        
         variables[variable] = value
+        # Replace the placeholder with the entered value
         prompt_text = prompt_text.replace(f"{{{variable}}}", f"{Fore.YELLOW}{value}{Fore.RESET}")
+        
     return prompt_text, variables
 
 def main():

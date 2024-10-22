@@ -31,14 +31,24 @@ def get_user_choice(prompts):
             print(Fore.MAGENTA + "Invalid input. Please enter a number.")
 
 def get_variable_input(prompt_text):
-    print(Fore.MAGENTA + "Enter values for variables (press Enter to use default):")
+    print(Fore.MAGENTA + "Enter values for variables (press Enter to use default, Ctrl+C to finish):")
     variables = {}
     while '{' in prompt_text and '}' in prompt_text:
         start = prompt_text.index('{')
         end = prompt_text.index('}')
         variable = prompt_text[start+1:end]
         default_value = variable  # Use the variable name as the default value
-        value = input(Fore.MAGENTA + f"Enter content for '{variable}' (default: {default_value}): " + Fore.YELLOW).strip()
+        value = ""
+        print(Fore.MAGENTA + f"Enter content for '{variable}' (default: {default_value}): " + Fore.YELLOW)
+        try:
+            while True:
+                line = input()
+                if not line:
+                    break
+                value += line + "\n"
+            value = value.strip()
+        except KeyboardInterrupt:
+            print("\nInput finished.")
         if not value:
             value = default_value
         variables[variable] = value

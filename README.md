@@ -11,6 +11,10 @@ This script is designed to assist users in selecting and filling customizable pr
 - **Clipboard Copying**: Once the prompt is customized with the user's inputs, the final version (without color codes) is automatically copied to the clipboard for convenience.
 - **Color-coded Output**: The script uses color-coded text to enhance the terminal interaction using the `colorama` library.
 
+---
+
+![Demo of the script](usage.gif)
+
 ## Prerequisites
 
 To run this script, the following Python packages must be installed:

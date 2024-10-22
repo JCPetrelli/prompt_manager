@@ -1,5 +1,5 @@
 
-# Prompt Selection and Generation Script
+# Prompt Manager
 
 This script is designed to assist users in selecting and filling customizable prompts from a CSV file. It allows the user to choose a prompt, input required variables, and then copies the final prompt to the clipboard for easy use.
 
